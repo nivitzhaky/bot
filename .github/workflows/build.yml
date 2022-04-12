@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -33,4 +33,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: fnkaya/spring-boot-app
+          tags: nivteaching/bot
