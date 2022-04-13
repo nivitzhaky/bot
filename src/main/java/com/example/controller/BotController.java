@@ -40,6 +40,11 @@ public class BotController {
         return new ResponseEntity<>("c", HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/d", method = RequestMethod.GET)
+    public ResponseEntity<?> d(@RequestParam String keyword) throws IOException {
+        return new ResponseEntity<>("d", HttpStatus.OK);
+    }
+
     @RequestMapping(value = "", method = { RequestMethod.POST})
     public ResponseEntity<?> getBotResponse(@RequestBody BotQuery query) throws IOException {
         HashMap<String, String> params = query.getQueryResult().getParameters();
