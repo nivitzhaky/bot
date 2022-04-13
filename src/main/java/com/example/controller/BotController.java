@@ -35,6 +35,16 @@ public class BotController {
 //        return new ResponseEntity<>("a", HttpStatus.OK);
 //    }
 
+    @RequestMapping(value = "/a", method = RequestMethod.GET)
+    public ResponseEntity<?> a(@RequestParam String keyword) throws IOException {
+        return new ResponseEntity<>("a", HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/b", method = RequestMethod.GET)
+    public ResponseEntity<?> b(@RequestParam String keyword) throws IOException {
+        return new ResponseEntity<>("b", HttpStatus.OK);
+    }
+
     @RequestMapping(value = "/c", method = RequestMethod.GET)
     public ResponseEntity<?> c(@RequestParam String keyword) throws IOException {
         return new ResponseEntity<>("c", HttpStatus.OK);
