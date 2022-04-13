@@ -42,7 +42,7 @@ public class BotController {
 
     @RequestMapping(value = "/d", method = RequestMethod.GET)
     public ResponseEntity<?> d(@RequestParam String keyword) throws IOException {
-        return new ResponseEntity<>("d, HttpStatus.OK);
+        return new ResponseEntity<>("d", HttpStatus.OK);
     }
 
     @RequestMapping(value = "", method = { RequestMethod.POST})
